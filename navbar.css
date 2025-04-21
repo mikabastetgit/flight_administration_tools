@@ -1,0 +1,46 @@
+/* Navigationsleiste links fixieren */
+.sidebar {
+    width: 200px; /* Breite der Navigation */
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: #333;
+    padding-top: 20px;
+	font-size: 20px;
+}
+
+img {
+	width: 100%;
+}
+
+/* Entfernt Standardabstände */
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Styling für Links */
+.sidebar ul li {
+    padding: 10px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Verschiebt den gesamten Body nach rechts */
+body {
+    margin: 0;
+    padding: 0;
+    margin-left: 200px; /* Abstand entsprechend der Navbar-Breite */
+}
